@@ -7,7 +7,11 @@ const IndexPage: NextPage<{}> = ({}) => {
       <Head>
         <title>NextJS Typescript Starter</title>
       </Head>
-      <p>Just a starter for creating NextJS Typescript apps.</p>
+      <h1>Opinionated NextJS Typescript starter</h1>
+      <p>
+        This is my preferred starter template for building NextJS apps in
+        Typescript.
+      </p>
     </div>
   );
 };
