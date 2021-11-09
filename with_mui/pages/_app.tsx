@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { ThemeProvider, CssBaseline } from '@material-ui/core';
+import {
+  StyledEngineProvider,
+  ThemeProvider,
+  CssBaseline
+} from '@mui/material';
 import { theme } from 'styles/theme';
 
 function MyApp({ Component, pageProps }) {
@@ -23,11 +27,12 @@ function MyApp({ Component, pageProps }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
         />
       </Head>
-
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Component {...pageProps} key={router.asPath} />
-      </ThemeProvider>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Component {...pageProps} key={router.asPath} />
+        </ThemeProvider>
+      </StyledEngineProvider>
     </>
   );
 }

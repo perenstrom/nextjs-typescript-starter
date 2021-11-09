@@ -1,7 +1,7 @@
 import React from 'react';
-import { Box, Container, Paper, Typography } from '@material-ui/core';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { Container, Box, Paper, Typography } from '@mui/material';
 
 const IndexPage: NextPage<{}> = ({}) => {
   return (
@@ -19,8 +19,8 @@ const IndexPage: NextPage<{}> = ({}) => {
             <p>
               This is my preferred starter template for building NextJS apps in
               Typescript. This version also includes{' '}
-              <a href="https://material-ui.com/">Material UI</a> for quicker
-              prototyping.
+              <a href="https://mui.com/">MUI</a> (formerly known as Material UI)
+              for quicker prototyping.
             </p>
           </Box>
         </Paper>
