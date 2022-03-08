@@ -17,7 +17,7 @@
     "@emotion/styled": "^11.3.0",
     "@mui/lab": "^5.0.0-alpha.54",
     "@mui/material": "^5.1.0",
-    "next": "^11.0.1",
+    "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
