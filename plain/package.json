@@ -8,7 +8,7 @@
     "start": "next start",
     "what": "ECHO Package system: npm",
     "test": "jest",
-    "test-watch": "jest --watch",
+    "test:watch": "jest --watch",
     "lint": "next lint"
   },
   "dependencies": {

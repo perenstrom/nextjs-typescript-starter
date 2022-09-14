@@ -6,6 +6,7 @@ import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 
 import { theme } from 'styles/theme';
+import { AppProps } from 'next/dist/shared/lib/router/router';
 
 const clientSideEmotionCache = createCache({ key: 'css', prepend: true });
 
@@ -13,7 +14,7 @@ function MyApp({
   Component,
   emotionCache = clientSideEmotionCache,
   pageProps
-}) {
+}: AppProps) {
   const router = useRouter();
 
   return (
