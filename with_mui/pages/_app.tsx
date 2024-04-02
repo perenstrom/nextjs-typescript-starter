@@ -1,12 +1,10 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
-
-import { theme } from 'styles/theme';
+import { CacheProvider } from '@emotion/react';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import { AppProps } from 'next/dist/shared/lib/router/router';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { theme } from '../styles/theme';
 
 const clientSideEmotionCache = createCache({ key: 'css', prepend: true });
 
